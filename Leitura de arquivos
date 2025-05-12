@@ -1,0 +1,16 @@
+using System;
+using System.IO;
+
+class LeituraArquivo {
+    static void Main() {
+        string caminho = "arquivo.txt";
+
+        if (File.Exists(caminho)) {
+            string conteudo = File.ReadAllText(caminho);
+            Console.WriteLine("Conteúdo do arquivo:");
+            Console.WriteLine(conteudo);
+        } else {
+            Console.WriteLine("Arquivo não encontrado.");
+        }
+    }
+}
