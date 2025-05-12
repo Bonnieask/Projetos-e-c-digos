@@ -1,0 +1,20 @@
+using System;
+
+class Login {
+    static void Main() {
+        string usuarioCorreto = "admin";
+        string senhaCorreta = "1234";
+
+        Console.WriteLine("Usuário:");
+        string usuario = Console.ReadLine();
+
+        Console.WriteLine("Senha:");
+        string senha = Console.ReadLine();
+
+        if (usuario == usuarioCorreto && senha == senhaCorreta) {
+            Console.WriteLine("Login bem-sucedido!");
+        } else {
+            Console.WriteLine("Usuário ou senha incorretos.");
+        }
+    }
+}
